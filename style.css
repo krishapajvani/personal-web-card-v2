@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 340px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  margin: 10px 0 5px;
+}
+
+.card h2 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .card h1 {
+    font-size: 1.3rem;
+  }
+
+  .card h2 {
+    font-size: 0.9rem;
+  }
+
+  .card img {
+    width: 100px;
+  }
+}
+.socials i {
+  font-size: 32px; /* increase size as you want, e.g. 40px */
+  color: #0077b5; /* example: LinkedIn blue */
+  transition: color 0.3s ease;
+}
+
+.socials a:hover i {
+  color: #005582; /* darker blue on hover */
+}
